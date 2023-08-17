@@ -37,7 +37,7 @@ const chkLang = localStorage.getItem("lang")
 // console.log(chkLang)
 localStorage.setItem("lang", lang);
 
-axios.get("../data/data.json")
+axios.get("data/data.json")
 .then(function(res){
     if($lang == "en"){
         res.data.EnNav.map((e,i)=>{
